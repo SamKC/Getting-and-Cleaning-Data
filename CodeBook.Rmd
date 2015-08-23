@@ -3,7 +3,7 @@
 
 ### Description
 
-The goal of this codebook illustrates how the raw data processed and scripted to produce the tidy data which can be used in study or research projects later. The codebook of this project are not used the files in the Inertial Signals folders. See the README.txt file for the detailed information on the dataset. The files that are used to load data are inclused in the followings:
+The goal of this codebook is to illustrate how the raw data processed and scripted to produce the tidy data which can be used in study or research projects later. The codebook of this project are not used the files in the Inertial Signals folders. See the README.txt file for the detailed information on the dataset. The files that are used to load data are included in the followings:
 
 .test/subject_test.txt  
 .test/X_test.txt  
@@ -82,7 +82,7 @@ str(Data,list.len = 20)
 ```
 #### Section 3. Use descriptive activity names to name the activities in the data set
 
-Merge data subset with the activityType table to cinlude the descriptive activity names
+Merge data subset with the activityType table to include the descriptive activity names
 ```{r}
 Data$activity <- as.character(Data$activity)
 Data$activity[Data$activity == 1] <- "WALKING"
